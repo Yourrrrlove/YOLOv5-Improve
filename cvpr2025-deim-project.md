@@ -249,6 +249,13 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     3. 新增<ES-MoE>动态路由网络教程视频。
     4. 新增<TPAMI2025 YOLO-MS>的MSBlock和GQL的教程视频。
 
+- 20260224
+
+    1. 修复一些已知问题。
+    2. 新增多个改进模块。
+    3. compile_module的编译模块支持50系显卡。
+    4. 为了兼容50系用户，新版的环境统一修改成torch2.8.0，旧版本的用户不影响。
+
 ### 7. 目前已有的模块
 
 - engine/extre_module/custom_nn/attention 
@@ -267,6 +274,9 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     12. CVPR2025|engine/extre_module/custom_nn/attention/CASAB.py 
     13. NN2025|engine/extre_module/custom_nn/attention/KSFA.py
     14. TPAMI2025|engine/extre_module/custom_nn/attention/GQL.py
+    15. TGRS2025|engine/extre_module/custom_nn/attention/ACA.py
+    16. TGRS2025|engine/extre_module/custom_nn/attention/DHPF.py
+    17. TGRS2025|engine/extre_module/custom_nn/attention/ACAB.py
 
 - engine/extre_module/custom_nn/block
 
@@ -325,6 +335,7 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     6. engine/extre_module/custom_nn/downsample/SPDConv.py
     7. engine/extre_module/custom_nn/downsample/HWD.py
     8. engine/extre_module/custom_nn/downsample/DRFD.py
+    9. TGRS2025|engine/extre_module/custom_nn/conv_module/FSConv.py
 
 - engine/extre_module/custom_nn/stem
 
@@ -346,6 +357,8 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     10. INFFUS2025|engine/extre_module/custom_nn/featurefusion/DPCF.py
     11. CVRP2025|engine/extre_module/custom_nn/featurefusion/LCA.py
     12. TGRS2025|engine/extre_module/custom_nn/featurefusion/HFFE.py
+    13. TGRS2025|engine/extre_module/custom_nn/featurefusion/MFPM.py
+    14. TGRS2025|engine/extre_module/custom_nn/featurefusion/ERM.py
 
 - engine/extre_module/custom_nn/module
 
@@ -388,6 +401,12 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     36. ICCV2025|engine/extre_module/custom_nn/module/HFRB.py
     37. ICIP2025|engine/extre_module/custom_nn/module/EVA.py
     38. CVPR2025|engine/extre_module/custom_nn/module/IEL.py
+    39. MICCAI2023|engine/extre_module/custom_nn/module/MFEBlock.py
+    40. AAAI2026|engine/extre_module/custom_nn/module/PartialNetBlock.py
+    41. TGRS2025|engine/extre_module/custom_nn/module/DRG.py
+    42. engine/extre_module/custom_nn/module/Wave2D.py
+    43. TGRS2025|engine/extre_module/custom_nn/module/GLGM.py
+    44. TGRS2025|engine/extre_module/custom_nn/module/MAC.py
 
 - engine/extre_module/custom_nn/neck
 
@@ -430,6 +449,9 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     21. ICML2023|engine/extre_module/custom_nn/transformer/MUA.py
     22. ACMMM2025|engine/extre_module/custom_nn/transformer/EGSA.py
     23. ACMMM2025|engine/extre_module/custom_nn/transformer/SWSA.py
+    24. AAAI2026|engine/extre_module/custom_nn/transformer/DHOGSA.py
+    25. NeurIPS2025|engine/extre_module/custom_nn/transformer/CBSA.py
+    26. TGRS2025|engine/extre_module/custom_nn/transformer/DPWA.py
 
 - engine/extre_module/custom_nn/mlp
 
@@ -442,6 +464,7 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     7. ICLR2025|engine/extre_module/custom_nn/mlp/KAN.py
     8. CVPR2025|engine/extre_module/custom_nn/mlp/EDFFN.py
     9. ICVJ2024|engine/extre_module/custom_nn/mlp/DML.py
+    10. AAAI2026|engine/extre_module/custom_nn/mlp/DIFF.py
 
 - engine/extre_module/custom_nn/mamba
 
@@ -455,10 +478,15 @@ PS:20250614版本更新后，本项目的dfine和deim已经支持Ultralytics同�
     8. ICCV2025|engine/extre_module/custom_nn/mamba/TinyViM.py
     9. INFFUS2025|engine/extre_module/custom_nn/mamba/CSI.py
     10. TIP2025|engine/extre_module/custom_nn/mamba/SFMB.py
+    11. TGRS2025|engine/extre_module/custom_nn/mamba/GLSS.py
 
 - engine/extre_module/custom_nn/moe
 
     1. engine/extre_module/custom_nn/moe/moe_module.py
+
+- engine/extre_module/custom_nn/featurepreprocess
+
+    1. TGRS2025|engine/extre_module/custom_nn/featurepreprocess/FAENet.py
 
 - 积木模块,示例教程engine/extre_module/custom_nn/module/example.py
 

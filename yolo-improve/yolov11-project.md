@@ -1,7 +1,7 @@
 # [基于Ultralytics的YOLO11|YOLO12改进项目.(69.9¥)](https://github.com/z1069614715/objectdetection_script)
 #### 因为YOLO11和YOLO12的结构高度相似，所以YOLO12的配置文件都可以从YOLO11修改过去，项目内有标注视频链接！
 
-# 目前自带的一些改进方案(目前拥有合计400+个改进点！持续更新！)
+# 目前自带的一些改进方案(目前拥有合计410+个改进点！持续更新！)
 
 # 为了感谢各位对本项目的支持,本项目的赠品是yolov5-PAGCP通道剪枝算法.[具体使用教程](https://www.bilibili.com/video/BV1yh4y1Z7vz/)
 
@@ -1449,6 +1449,26 @@
 
     使用[TIP2025 SFMB](https://arxiv.org/pdf/2511.06593v1)中的SFMB改进C3k2.
 
+138. ultralytics/cfg/models/11/yolo11-C3k2-MFEB.yaml
+
+    使用[MICCAI2023 SHISRCNet](https://arxiv.org/abs/2306.14119)中的MFEB改进C3k2.
+
+139. ultralytics/cfg/models/11/yolo11-C3k2-PartialNetBlock.yaml
+
+    使用[AAAI2026 Partial Channel Network](https://arxiv.org/pdf/2502.01303)中的PartialNetBlock改进C3k2.
+
+140. ultralytics/cfg/models/11/yolo11-C3k2-DRG.yaml
+
+    使用[TGRS2025 DRPCA-Net](https://arxiv.org/pdf/2507.09541)中的DRG改进C3k2.
+
+151. ultralytics/cfg/models/11/yolo11-C3k2-GLGM.yaml
+
+    使用[TGRS2025 ISGLNet](https://ieeexplore.ieee.org/document/11232501)中的GLGM改进C3k2.
+
+152. ultralytics/cfg/models/11/yolo11-C3k2-MAC.yaml
+
+    使用[TGRS2025 HDNet](https://ieeexplore.ieee.org/document/11232501)中的MAC改进C3k2.
+
 ### C2PSA系列
 
 1. ultralytics/cfg/models/11/yolo11-C2BRA.yaml
@@ -1939,3 +1959,12 @@
     3. 新增TGRS2025-MASFNet中的模块.
     4. 更新使用教程.
     5. 百度云视频增加20260203更新说明.
+
+- **20260224-yolo11-v1.37**
+    1. 新增MICCAI2023-SHISRCNet中的模块.
+    2. 新增AAAI2026-Partial Channel Network中的模块.
+    3. 新增TGRS2025-DRPCANet中的模块.
+    4. 新增TGRS2025-ISGLNet中的模块.
+    5. 新增TGRS2025-HDNet中的模块.
+    6. 更新使用教程.
+    7. 百度云视频增加20260223更新说明.

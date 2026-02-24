@@ -840,6 +840,26 @@
 
     使用[TGRS2025 MASFNet](https://ieeexplore.ieee.org/document/10955257)中的FAENet增强输入图像的特征.
 
+101. ultralytics/cfg/models/rt-detr/rtdetr-C2f-MFEB.yaml
+
+    使用[MICCAI2023 SHISRCNet](https://arxiv.org/abs/2306.14119)中的MFEB与CSP改进Backbone.
+
+102. ultralytics/cfg/models/rt-detr/rtdetr-C2f-PartialNetBlock.yaml
+
+    使用[AAAI2026 Partial Channel Network](https://arxiv.org/pdf/2502.01303)中的PartialNetBlock与CSP改进Backbone.
+
+103. ultralytics/cfg/models/rt-detr/rtdetr-C2f-DGR.yaml
+
+    使用[TGRS2025 DRPCA-Net](https://arxiv.org/pdf/2507.09541)中的DRG与CSP改进Backbone.
+
+104. ultralytics/cfg/models/rt-detr/rtdetr-C2f-GLGM.yaml
+
+    使用[TGRS2025 ISGLNet](https://ieeexplore.ieee.org/document/11232501)中的GLGM与CSP改进Backbone.
+
+105. ultralytics/cfg/models/rt-detr/rtdetr-C2f-MAC.yaml
+
+    使用[TGRS2025 HDNet](https://ieeexplore.ieee.org/document/11232501)中的MAC与CSP改进Backbone.
+
 ### AIFI系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-LPE.yaml
 
@@ -2494,3 +2514,12 @@
     3. 新增TGRS2025-MASFNet中的模块.
     4. 更新使用教程.
     5. 百度云视频增加20260203更新说明.
+
+- **20260224-rtdetr-v1.67**
+    1. 新增MICCAI2023-SHISRCNet中的模块.
+    2. 新增AAAI2026-Partial Channel Network中的模块.
+    3. 新增TGRS2025-DRPCANet中的模块.
+    4. 新增TGRS2025-ISGLNet中的模块.
+    5. 新增TGRS2025-HDNet中的模块.
+    6. 更新使用教程.
+    7. 百度云视频增加20260223更新说明.

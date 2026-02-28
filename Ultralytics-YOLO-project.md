@@ -216,9 +216,59 @@
 
     1. ultralytics/nn/extra_modules/head/LSPCD.py
 
+## Loss 列表
+
+#### 默认配置（兼容）
+
+- cls_loss=bce
+- iou_loss=ciou
+- iou_aux=none
+
+- cls_loss（分类损失）
+
+    1. bce
+    2. slide
+    3. ema_slide
+    4. focal
+    5. varifocal
+    6. qualityfocal
+
+- iou_loss（IoU主损失）
+
+    1. 基础形式：
+       iou、giou、diou、ciou、eiou、siou、shapeiou、piou、piou2
+    2. Inner形式：
+       inner_<base>（例如：inner_diou、inner_ciou、inner_siou）
+    3. Focaler形式：
+       focaler_<base>（例如：focaler_diou、focaler_ciou、focaler_siou）
+    4. MPDIoU家族：
+       mpdiou、inner_mpdiou、focaler_mpdiou
+    5. WiseIoU家族：
+       wiseiou（等价wiseiou_wiou）
+       wiseiou_<variant>
+       wiseiou_inner_<variant>
+       wiseiou_focaler_<variant>
+    6. wise <variant> 可选值：
+       iou、wiou、giou、diou、ciou、eiou、siou、shapeiou、piou、piou2、mpdiou
+
+- iou_aux（IoU辅助损失）
+
+    1. none
+    2. gcd
+    3. nwd
+
 ## 更新公告
 
 - 20260217
 
     1. 初版项目发布.
     2. 新增使用教程、模块改进使用教程视频.
+
+- 20260228
+
+    1. 新增常见的cls和iou的损失，并直接支持在train.py里面指定，并且在训练的时候会打印目前的loss.
+    2. 对模型改进的yaml扩展到yolov8、yolov10、yolo11、yolo12.
+    3. 新增在训练过程中mAP75输出.
+    4. 新增毕业必备-基于web的可视化界面，支持选择模型、检测图片、检测视频，显示目标数量等等功能
+    5. 新增web界面的教程视频.
+    6. 新增注册module的教程视频.

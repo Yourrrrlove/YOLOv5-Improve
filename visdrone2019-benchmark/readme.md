@@ -3,6 +3,8 @@
 ### Jetson Orin Nano 4G TensorRT(8.6.2) FP16 BatchSize=1
 ### RTX4090D TensorRT(10.11.0) FP16 BatchSize=1
 
+![Visdrone2019 Benchmark](https://github.com/z1069614715/objectdetection_script/blob/master/visdrone2019-benchmark/visdrone_ap_gflops_params_bubble.svg)
+
 | model | Input Shape | GFlops | Params | Ap | Ap50 | APs | APm | APl | FPS(Jetson Orin Nano 4G) | FPS(RTX4090D) |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | Faster-RCNN-R50-FPN-CIOU | (768, 1344) | 208G | 41.39M | 0.194 | 0.329 | 0.095 | 0.309 | 0.429 | - | - |

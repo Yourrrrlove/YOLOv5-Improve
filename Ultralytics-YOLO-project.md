@@ -14,7 +14,7 @@
 3. 做完实验不知道怎么写论文？本项目会定期拆解高分论文案例，教你如何把实验结果写成逻辑清晰、亮点突出的高质量学术论文
 4. 想自己魔改模块的同学！本项目提供超级简单的模块注册方式，只需按照教程操作，就能轻松注册自己的模块，还能和各种CSP变种随意组合！
 
-## 模块列表
+## 模块列表(这些模块均已在代码中注册好，只需要修改yaml可以直接实验)
 
 - ultralytics/nn/extra_modules/attention 
 
@@ -27,19 +27,18 @@
     7. ultralytics/nn/extra_modules/attention/mlca.py
     8. BIBM2024|ultralytics/nn/extra_modules/attention/FSA.py
     9. AAAI2025|ultralytics/nn/extra_modules/attention/CDFA.py
-    10. ultralytics/nn/extra_modules/attention/GLSA.py
-    11. TGRS2025|ultralytics/nn/extra_modules/attention/MCA.py
-    12. CVPR2025|ultralytics/nn/extra_modules/attention/CASAB.py 
-    13. NN2025|ultralytics/nn/extra_modules/attention/KSFA.py
-    14. TPAMI2025|ultralytics/nn/extra_modules/attention/GQL.py
-    15. TGRS2025|ultralytics/nn/extra_modules/attention/ACA.py
-    16. TGRS2025|ultralytics/nn/extra_modules/attention/DHPF.py
-    17. TGRS2025|ultralytics/nn/extra_modules/attention/ACAB.py
+    10. TGRS2025|ultralytics/nn/extra_modules/attention/MCA.py
+    11. CVPR2025|ultralytics/nn/extra_modules/attention/CASAB.py 
+    12. NN2025|ultralytics/nn/extra_modules/attention/KSFA.py
+    13. TPAMI2025|ultralytics/nn/extra_modules/attention/GQL.py
+    14. TGRS2025|ultralytics/nn/extra_modules/attention/ACA.py
+    15. TGRS2025|ultralytics/nn/extra_modules/attention/DHPF.py
+    16. TGRS2025|ultralytics/nn/extra_modules/attention/ACAB.py
 
-- ultralytics/nn/extra_modules/conv_module
+- ultralytics/nn/extra_modules/conv_module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第五节)
 
     1. CVPR2021|ultralytics/nn/extra_modules/conv_module/dbb.py
-    2. IEEETIP2024|ultralytics/nn/extra_modules/conv_module/deconv.py
+    2. TIP2024|ultralytics/nn/extra_modules/conv_module/deconv.py
     3. ICCV2023|ultralytics/nn/extra_modules/conv_module/dynamic_snake_conv.py
     4. CVPR2023|ultralytics/nn/extra_modules/conv_module/pconv.py
     5. AAAI2025|ultralytics/nn/extra_modules/conv_module/psconv.py
@@ -66,6 +65,7 @@
     26. ICCV2025|ultralytics/nn/extra_modules/conv_module/Converse2D.py
     27. CVPR2025|ultralytics/nn/extra_modules/conv_module/gcconv.py
     28. ACCV2024|ultralytics/nn/extra_modules/conv_module/RMBC.py
+    29. CVPR2026|ultralytics/nn/extra_modules/conv_module/DEGConv.py
 
 - engine/extre_module/custom_nn/stem
 
@@ -85,7 +85,7 @@
 
 - ultralytics/nn/extra_modules/downsample
 
-    1. IEEETIP2020|ultralytics/nn/extra_modules/downsample/gcnet.py
+    1. TIP2020|ultralytics/nn/extra_modules/downsample/gcnet.py
     2. 自研模块|ultralytics/nn/extra_modules/downsample/lawds.py 
     3. ultralytics/nn/extra_modules/downsample/WaveletPool.py
     4. ultralytics/nn/extra_modules/downsample/ADown.py
@@ -113,36 +113,37 @@
     14. ICLR2024|ultralytics/nn/extra_modules/module/FATBlock.py
     15. CVPR2024|ultralytics/nn/extra_modules/module/MSCB.py
     16. ultralytics/nn/extra_modules/module/LEGBlock.py
-    17. CVPR2025|ultralytics/nn/extra_modules/module/RCB.py
-    18. ECCV2024|ultralytics/nn/extra_modules/module/JDPM.py
-    19. CVPR2025|ultralytics/nn/extra_modules/module/vHeat.py
-    20. CVPR2025|ultralytics/nn/extra_modules/module/EBlock.py
-    21. CVPR2025|ultralytics/nn/extra_modules/module/DBlock.py
-    22. ECCV2024|ultralytics/nn/extra_modules/module/FMB.py
-    23. CVPR2024|ultralytics/nn/extra_modules/module/IDWB.py
-    24. ECCV2022|ultralytics/nn/extra_modules/module/LFE.py
-    25. AAAI2025|ultralytics/nn/extra_modules/module/FCM.py
-    26. CVPR2024|ultralytics/nn/extra_modules/module/RepViTBlock.py
-    27. CVPR2024|ultralytics/nn/extra_modules/module/PKIModule.py
-    28. CVPR2024|ultralytics/nn/extra_modules/module/camixer.py
-    29. ICCV2025|ultralytics/nn/extra_modules/module/ESC.py
-    30. CVPR2025|ultralytics/nn/extra_modules/module/nnWNet.py
-    31. TGRS2025|ultralytics/nn/extra_modules/module/ARF.py
-    32. AAAI2024|ultralytics/nn/extra_modules/module/CFBlock.py
-    33. IJCV2024|ultralytics/nn/extra_modules/module/FMA.py
-    34. ultralytics/nn/extra_modules/module/LWGA.py
-    35. TGRS2025|ultralytics/nn/extra_modules/module/CSSC.py
-    36. TGRS2025|ultralytics/nn/extra_modules/module/CNCM.py
-    37. ICCV2025|ultralytics/nn/extra_modules/module/HFRB.py
-    38. ICIP2025|ultralytics/nn/extra_modules/module/EVA.py
-    39. CVPR2025|ultralytics/nn/extra_modules/module/IEL.py
-    40. MICCAI2023|ultralytics/nn/extra_modules/module/MFEBlock.py
-    41. AAAI2026|ultralytics/nn/extra_modules/module/PartialNetBlock.py
-    42. TGRS2025|ultralytics/nn/extra_modules/module/DRG.py
-    43. ultralytics/nn/extra_modules/module/Wave2D.py
-    44. TGRS2025|ultralytics/nn/extra_modules/module/GLGM.py
-    45. TGRS2025|ultralytics/nn/extra_modules/module/MAC.py
-    46. AAAI2026|ultralytics/nn/extra_modules/module/SPJFB.py
+    17. ultralytics/nn/extra_modules/module/GLSA.py
+    18. CVPR2025|ultralytics/nn/extra_modules/module/RCB.py
+    19. ECCV2024|ultralytics/nn/extra_modules/module/JDPM.py
+    20. CVPR2025|ultralytics/nn/extra_modules/module/vHeat.py
+    21. CVPR2025|ultralytics/nn/extra_modules/module/EBlock.py
+    22. CVPR2025|ultralytics/nn/extra_modules/module/DBlock.py
+    23. ECCV2024|ultralytics/nn/extra_modules/module/FMB.py
+    24. CVPR2024|ultralytics/nn/extra_modules/module/IDWB.py
+    25. ECCV2022|ultralytics/nn/extra_modules/module/LFE.py
+    26. AAAI2025|ultralytics/nn/extra_modules/module/FCM.py
+    27. CVPR2024|ultralytics/nn/extra_modules/module/RepViTBlock.py
+    28. CVPR2024|ultralytics/nn/extra_modules/module/PKIModule.py
+    29. CVPR2024|ultralytics/nn/extra_modules/module/camixer.py
+    30. ICCV2025|ultralytics/nn/extra_modules/module/ESC.py
+    31. CVPR2025|ultralytics/nn/extra_modules/module/nnWNet.py
+    32. TGRS2025|ultralytics/nn/extra_modules/module/ARF.py
+    33. AAAI2024|ultralytics/nn/extra_modules/module/CFBlock.py
+    34. IJCV2024|ultralytics/nn/extra_modules/module/FMA.py
+    35. ultralytics/nn/extra_modules/module/LWGA.py
+    36. TGRS2025|ultralytics/nn/extra_modules/module/CSSC.py
+    37. TGRS2025|ultralytics/nn/extra_modules/module/CNCM.py
+    38. ICCV2025|ultralytics/nn/extra_modules/module/HFRB.py
+    39. ICIP2025|ultralytics/nn/extra_modules/module/EVA.py
+    40. CVPR2025|ultralytics/nn/extra_modules/module/IEL.py
+    41. MICCAI2023|ultralytics/nn/extra_modules/module/MFEBlock.py
+    42. AAAI2026|ultralytics/nn/extra_modules/module/PartialNetBlock.py
+    43. TGRS2025|ultralytics/nn/extra_modules/module/DRG.py
+    44. ultralytics/nn/extra_modules/module/Wave2D.py
+    45. TGRS2025|ultralytics/nn/extra_modules/module/GLGM.py
+    46. TGRS2025|ultralytics/nn/extra_modules/module/MAC.py
+    47. AAAI2026|ultralytics/nn/extra_modules/module/SPJFB.py
 
 - ultralytics/nn/extra_modules/block 
     
@@ -179,6 +180,8 @@
     25. NeurIPS2025|ultralytics/nn/extra_modules/transformer/CBSA.py
     26. TGRS2025|ultralytics/nn/extra_modules/transformer/DPWA.py
     27. TIP2025|ultralytics/nn/extra_modules/transformer/DWM_MSA.py
+    28. CVPR2026|ultralytics/nn/extra_modules/transformer/BinaryAttention.py
+    29. CVPR2025|ultralytics/nn/extra_modules/transformer/wca.py
 
 - ultralytics/nn/extra_modules/mamba
 
@@ -194,6 +197,7 @@
     10. TIP2025|ultralytics/nn/extra_modules/mamba/SFMB.py
     11. TGRS2025|ultralytics/nn/extra_modules/mamba/GLSS.py
     12. TGRS2025|ultralytics/nn/extra_modules/mamba/GLSS2D.py
+    13. CVPR2026|ultralytics/nn/extra_modules/mamba/TransMixer.py
 
 - ultralytics/nn/extra_modules/mlp
 
@@ -208,12 +212,26 @@
     9. ICVJ2024|ultralytics/nn/extra_modules/mlp/DML.py
     10. AAAI2026|ultralytics/nn/extra_modules/mlp/DIFF.py
 
+- ultralytics/nn/extra_modules/neck
+
+    1. ultralytics/nn/extra_modules/neck/ASF.py
+    2. ultralytics/nn/extra_modules/neck/BiFPN.py
+    3. AAAI2022|ultralytics/nn/extra_modules/neck/CTrans.py
+    4. ultralytics/nn/extra_modules/neck/EfficientRepBiPAN.py
+    5. ultralytics/nn/extra_modules/neck/GFPN.py
+    6. ultralytics/nn/extra_modules/neck/HSFPN.py
+    7. AAAI2025|ultralytics/nn/extra_modules/neck/HS_FPN.py
+    8. TPAMI2025|ultralytics/nn/extra_modules/neck/HyperComputeModule.py
+    9. ultralytics/nn/extra_modules/neck/SlimNeck.py
+    10. ultralytics/nn/extra_modules/neck/GoldYOLO.py
+    11. ultralytics/nn/extra_modules/neck/EMBSFPN.py
+
 - ultralytics/nn/extra_modules/featurefusion
 
     1. 自研模块|ultralytics/nn/extra_modules/featurefusion/cgfm.py
     2. BMVC2024|ultralytics/nn/extra_modules/featurefusion/msga.py
     3. CVPR2024|ultralytics/nn/extra_modules/featurefusion/mfm.py
-    4. IEEETIP2023|ultralytics/nn/extra_modules/featurefusion/CSFCN.py
+    4. TIP2023|ultralytics/nn/extra_modules/featurefusion/CSFCN.py
     5. BIBM2024|ultralytics/nn/extra_modules/featurefusion/mpca.py
     6. ACMMM2024|ultralytics/nn/extra_modules/featurefusion/wfu.py
     7. CVPR2025|ultralytics/nn/extra_modules/featurefusion/GDSAFusion.py
@@ -225,6 +243,12 @@
     13. TGRS2025|ultralytics/nn/extra_modules/featurefusion/MFPM.py
     14. TGRS2025|ultralytics/nn/extra_modules/featurefusion/ERM.py
     15. TIP2025|ultralytics/nn/extra_modules/featurefusion/CAFM.py
+    16. TIP2024|ultralytics/nn/extra_modules/featurefusion/CGAFusion.py
+    17. IF2023|ultralytics/nn/extra_modules/featurefusion/PSFM.py
+    18. IF2023|ultralytics/nn/extra_modules/featurefusion/SDFM.py
+    19. 自研模块|ultralytics/nn/extra_modules/featurefusion/DAF.py
+    20. 自研模块|ultralytics/nn/extra_modules/featurefusion/CIDAF.py
+    21. 自研模块|ultralytics/nn/extra_modules/featurefusion/WDAF.py
 
 - ultralytics/nn/extra_modules/norm
 
@@ -308,3 +332,17 @@
     6. 新增DynamicERF模块.
     7. 新增CSP、MetaFormer、Module在yaml中的使用教程-20260307补充版的视频.
     8. 修复用户反馈的bug.
+
+- 20260315
+    
+    1. 新增CVPR2026-DEGConv模块。
+    2. 新增CVPR2026-BinaryAttention模块。
+    3. 新增CVPR2026-TransMixer模块。
+    4. 新增CVPR2025-wca模块。
+    5. 新增自研模块-DAF模块。
+    6. 新增自研模块-CIDAF模块。
+    7. 新增自研模块-WDAF模块。
+    8. 新增Neck部分内容(ASF、BIFPN、CTrans、ERepBIFPN、GFPN、HSFPN、HS-FPN、超图FPN、SlimNeck、GoldYOLO、EMBSFPN)。
+    9. 补全attention部分的配置文件。
+    10. 新增conv、attention的内容如何与CSP模块随意组合的使用教程。
+    11. 修复用户反馈的bug。

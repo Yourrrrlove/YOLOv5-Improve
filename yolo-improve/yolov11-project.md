@@ -1,7 +1,7 @@
 # [基于Ultralytics的YOLO11|YOLO12改进项目.(69.9¥)](https://github.com/z1069614715/objectdetection_script)
 #### 因为YOLO11和YOLO12的结构高度相似，所以YOLO12的配置文件都可以从YOLO11修改过去，项目内有标注视频链接！
 
-# 目前自带的一些改进方案(目前拥有合计410+个改进点！持续更新！)
+# 目前自带的一些改进方案(目前拥有合计420+个改进点！持续更新！)
 
 # 为了感谢各位对本项目的支持,本项目的赠品是yolov5-PAGCP通道剪枝算法.[具体使用教程](https://www.bilibili.com/video/BV1yh4y1Z7vz/)
 
@@ -786,6 +786,10 @@
 
     使用[TGRS2025 ISGLNet](https://ieeexplore.ieee.org/document/11232501)中的ERM改进特征融合.
 
+35. ultralytics/cfg/models/11/yolo11-CAFM.yaml
+    
+    使用[TIP2025 DSMT](https://ieeexplore.ieee.org/document/10955125)中的CAFM改进yolo11-neck.
+
 ### Head系列
 1. ultralytics/cfg/models/11/yolo11-dyhead.yaml
 
@@ -1469,6 +1473,22 @@
 
     使用[TGRS2025 HDNet](https://ieeexplore.ieee.org/document/11232501)中的MAC改进C3k2.
 
+153. ultralytics/cfg/models/11/yolo11-C3k2-SPJFB.yaml
+    
+    使用[AAAI2026 SPJFNet](https://arxiv.org/pdf/2508.04041)中的SPJFBlock改进C3k2.
+
+154. ultralytics/cfg/models/11/yolo11-C3k2-GLSS2D.yaml
+    
+    使用[TGRS2025 GLVMamba](https://ieeexplore.ieee.org/document/11014226)中的GLSS2D改进C3k2.
+
+155. ultralytics/cfg/models/11/yolo11-C3k2-DEGConv.yaml
+    
+    使用[CVPR2026 MixerCSeg](https://arxiv.org/pdf/2603.01361)中的DEGConv改进C3k2.
+
+156. ultralytics/cfg/models/11/yolo11-C3k2-TransMixer.yaml
+    
+    使用[CVPR2026 TransMixer](https://arxiv.org/pdf/2603.01361)中的TransMixer改进C3k2.
+
 ### C2PSA系列
 
 1. ultralytics/cfg/models/11/yolo11-C2BRA.yaml
@@ -1570,6 +1590,18 @@
 25. ultralytics/cfg/models/11/yolo11-C2PSA-EGSA.yaml
 
     使用[ACMMM2025 FlickCD](https://dl.acm.org/doi/epdf/10.1145/3746027.3755657)中的EGSA改进C2PSA.
+
+26. ultralytics/cfg/models/11/yolo11-C2DWMMSA.yaml
+    
+    使用[TGRS2025 USTNet](https://ieeexplore.ieee.org/document/11146454)中的DWMMSA改进C2PSA.
+
+27. ultralytics/cfg/models/11/yolo11-C2BinaryAttn.yaml
+    
+    使用[CVPR2026 BinaryAttention](https://arxiv.org/pdf/2303.08810)中的BinaryAttention改进C2PSA.
+
+28. ultralytics/cfg/models/11/yolo11-C2WCA.yaml
+    
+    使用[CVPR2025 Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection](https://openaccess.thecvf.com/content/CVPR2025/papers/Yan_Wavelet_and_Prototype_Augmented_Query-based_Transformer_for_Pixel-level_Surface_Defect_CVPR_2025_paper.pdf)中的WCA改进C2PSA.
 
 ### A2C2f系列
 1. ultralytics/cfg/models/12/yolo12-A2C2f-CGLU.yaml
@@ -1972,3 +2004,15 @@
 - **20260307-yolo11-v1.38**
     1. 优化detect.py中的特征图保存机制，使其可以单独保存每一个通道的特征图和总通道求和的特征图.
     2. 优化训练过程的输出，增加训练过程中的mAP75输出.
+
+- **20260321-yolo11-v1.39**
+    1. 新增AAAI2026-SPJFBlock模块.
+    2. 新增TGRS2025-GLVMamba中的GLSS2D模块.
+    3. 新增TIP2025-DSMT中的CAFM模块.
+    4. 新增TGRS2025-USTNet中的DWMMSA模块.
+    5. 新增CVPR2026-MixerCSeg中的DEGConv模块.
+    6. 新增CVPR2026-BinaryAttention的模块.
+    7. 新增CVPR2026-TransMixer模块.
+    8. 新增CVPR2025-Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection中的WCA模块.
+    9. 更新使用教程.
+    10. 百度云视频增加20260321更新说明.

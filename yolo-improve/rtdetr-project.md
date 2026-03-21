@@ -860,6 +860,22 @@
 
     使用[TGRS2025 HDNet](https://ieeexplore.ieee.org/document/11232501)中的MAC与CSP改进Backbone.
 
+106. ultralytics/cfg/models/rt-detr/rtdetr-C2f-SPJFB.yaml
+    
+    使用[AAAI2026 SPJFNet](https://arxiv.org/pdf/2508.04041)中的SPJFBlock与CSP改进Backbone.
+
+107. ultralytics/cfg/models/rt-detr/rtdetr-C2f-GLSS2D.yaml
+    
+    使用[TGRS2025 GLVMamba](https://ieeexplore.ieee.org/document/11014226)中的GLSS2D与CSP改进Backbone.
+
+108. ultralytics/cfg/models/rt-detr/rtdetr-C2f-DEGConv.yaml
+    
+    使用[CVPR2026 MixerCSeg](https://arxiv.org/pdf/2603.01361)中的DEGConv与CSP改进Backbone.
+
+109. ultralytics/cfg/models/rt-detr/rtdetr-C2f-TransMixer.yaml
+    
+    使用[CVPR2026 MixerCSeg](https://arxiv.org/pdf/2603.01361)中的TransMixer与CSP改进Backbone.
+
 ### AIFI系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-LPE.yaml
 
@@ -972,6 +988,18 @@
 29. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-SWSA.yaml
 
     使用[ACMMM2025 FlickCD](https://dl.acm.org/doi/epdf/10.1145/3746027.3755657)中的SWSA改进AIFI.
+
+30. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-DWMMSA.yaml
+    
+    使用[TIP2025 DSMT](https://ieeexplore.ieee.org/document/10955125)中的DWMMSA改进AIFI.
+
+31. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-BinaryAttn.yaml
+    
+    使用[CVPR2026 BinaryAttention](https://arxiv.org/abs/2602.00701)中的BinaryAttention改进AIFI.
+
+32. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-WCA.yaml
+    
+    使用[CVPR2025 Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection](https://openaccess.thecvf.com/content/CVPR2025/papers/Yan_Wavelet_and_Prototype_Augmented_Query-based_Transformer_for_Pixel-level_Surface_Defect_CVPR_2025_paper.pdf)中的WCA改进AIFI.
 
 ### Neck系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-ASF.yaml
@@ -1103,6 +1131,10 @@
 32. ultralytics/cfg/models/rt-detr/rtdetr-ERM.yaml
 
     使用[TGRS2025 ISGLNet](https://ieeexplore.ieee.org/document/11232501)中的ERM改进特征融合.
+
+33. ultralytics/cfg/models/rt-detr/rtdetr-CAFM.yaml
+    
+    使用[TIP2025 DSMT](https://ieeexplore.ieee.org/document/10955125)中的CAFM改进rtdetr-neck.
 
 ### Head系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-p2.yaml
@@ -2527,3 +2559,16 @@
 - **20260307-rtdetr-v1.68**
     1. 增加训练过程中的mAP75输出.
     2. 优化detect.py中的特征图保存机制，使其可以单独保存每一个通道的特征图和总通道求和的特征图.
+
+- **20260321-rtdetr-v1.69**
+    1. 新增AAAI2026-SPJFBlock模块.
+    2. 新增TGRS2025-GLVMamba中的GLSS2D模块.
+    3. 新增TIP2025-DSMT中的CAFM模块.
+    4. 新增TGRS2025-USTNet中的DWMMSA模块.
+    5. 新增CVPR2026-MixerCSeg中的DEGConv模块.
+    6. 新增CVPR2026-BinaryAttention的模块.
+    7. 新增CVPR2026-TransMixer模块.
+    8. 新增CVPR2025-Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection中的WCA模块.
+    9. 更新使用教程.
+    10. 百度云视频增加20260321更新说明.
+    11. 修复一些失效的链接.

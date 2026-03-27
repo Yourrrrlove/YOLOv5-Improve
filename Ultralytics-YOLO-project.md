@@ -94,6 +94,9 @@
     7. ultralytics/nn/extra_modules/downsample/HWD.py
     8. ultralytics/nn/extra_modules/downsample/DRFD.py
     9. TGRS2025|ultralytics/nn/extra_modules/conv_module/FSConv.py
+    10. 自研模块|ultralytics/nn/extra_modules/downsample/EdgeLAWDS.py
+    11. 自研模块|ultralytics/nn/extra_modules/downsample/FreqLAWDS.py
+    12. 自研模块|ultralytics/nn/extra_modules/downsample/RouterLAWDS.py
 
 - ultralytics/nn/extra_modules/module
 
@@ -144,6 +147,7 @@
     45. TGRS2025|ultralytics/nn/extra_modules/module/GLGM.py
     46. TGRS2025|ultralytics/nn/extra_modules/module/MAC.py
     47. AAAI2026|ultralytics/nn/extra_modules/module/SPJFB.py
+    48. 自研模块|ultralytics/nn/extra_modules/module/FasterCGABlock.py
 
 - ultralytics/nn/extra_modules/block 
     
@@ -225,6 +229,7 @@
     9. ultralytics/nn/extra_modules/neck/SlimNeck.py
     10. ultralytics/nn/extra_modules/neck/GoldYOLO.py
     11. ultralytics/nn/extra_modules/neck/EMBSFPN.py
+    12. ultralytics/nn/extra_modules/neck/FDPN.py((里面有三个自研模块FocusFeature、DynamicFrequencyFocusFeature、AlignmentGuidedFocusFeature))
 
 - ultralytics/nn/extra_modules/featurefusion
 
@@ -346,3 +351,15 @@
     9. 补全attention部分的配置文件。
     10. 新增conv、attention的内容如何与CSP模块随意组合的使用教程。
     11. 修复用户反馈的bug。
+
+- 20260327
+    1. 新增自研模块-EdgeLAWDS模块。
+    2. 新增自研模块-FreqLAWDS模块。
+    3. 新增自研模块-RouterLAWDS模块。
+    4. 新增自研模块-FasterCGABlock模块。
+    5. 新增自研金字塔-FDPN。
+    6. 新增自研金字塔中的FDPN模块变种AGFDPN模块。
+    7. 新增自研金字塔中的FDPN模块变种DFFDPN模块。
+    8. 修复用户反馈的bug。
+    9. 补齐了LSPCD的配置文件。
+    10. 新增CVPR2026-Does YOLO Really Need to See Every Training Image in Every Epoch?的实现方法，此方法主要用于筛选简单和困难的样本，大部分情况下可以无损加速训练，并新增使用教程视频。

@@ -2,21 +2,27 @@
 
 1. 本项目集成了YOLOv8、v10、v11、v12乃至前沿的YOLO26等全系列基础模型。 无论是做横向对比实验，还是纵向的版本改进，无需到处找资源，一个项目就能满足你所有的实验需求！
 2. 核心代码已实现高度模块化与解耦，专为新手优化。 你完全不需要死磕底层复杂代码，只需像搭积木一样简单修改YAML配置文件，就能轻松实现各种改进模块的自由组合。
-3. 面对日益内卷的YOLO赛道，简单的“缝合”已难满足毕业要求。 本项目不仅提供现成的创新方案，更配套独家“二次创新”课程，授人以渔。我们将手把手教你掌握模块设计的底层逻辑，助你从“模仿者”进阶为“创造者”，设计出独属于你的创新模块。
+3. 在YOLO研究日趋饱和的今天，简单的模块堆砌已难以支撑一篇高质量的毕业论文。我们深知你的痛点——这里不只是给你现成方案，更配套独家「二次创新」系统课程，手把手拆解模块设计的底层逻辑，带你完成从模仿者到创造者的真正蜕变，打造出独属于你、真正有价值的创新成果。担心自己基础薄弱、看不懂怎么创新？完全不用怕，项目内持续更新团队自研的高创新度模块，即便是零基础小白也能直接上手、开箱即用，让你的论文创新度稳稳在线，轻松应对答辩！
 4. 针对有代码基础但受困于Ultralytics复杂架构的同学， 本项目引入了来自DFine、DEIM项目中成熟的“万物皆可融”架构思想。你无需纠结模块注册等信息，只需遵循我所提供的标准接口规范，即可将自定义魔改模块无缝融入YAML配置，与各类CSP变种灵活结合。
 5. 实验跑通了，却不知道如何写创新点？ 本项目将定期拆解高分论文，传授写作心法，教你如何将实验成果转化为逻辑严密、亮点突出的高质量学术论文，解决写作难题！
-6. 毕业设计缺少高大上的展示界面？ 别担心，项目会内置基于PyQt或HTML的通用可视化界面，开箱即用，完美补齐毕业论文的最后一块拼图，助你从容应对答辩！
-7. 购买即享专属技术交流群， 这里有业内公认的高效答疑服务，以及志同道合的伙伴互助交流。拒绝闭门造车，让我们带你避开深坑，高效通关！  
+6. 毕业设计缺少高大上的展示界面？ 别担心，项目会内置基于HTML的通用可视化界面，开箱即用，完美补齐毕业论文的最后一块拼图，助你从容应对答辩！
+7. 项目内有CVPR2026-Does YOLO Really Need to See Every Training Image in Every Epoch中的AFSS加速训练机制，助你在有限的设备内训练速度更快！
+8. 购买即享专属技术交流群， 这里有业内公认的高效答疑服务，以及志同道合的伙伴互助交流。拒绝闭门造车，让我们带你避开深坑，高效通关！  
+
+**注意：部分功能在项目初期可能尚未实现，将随着项目的持续开发逐步补齐完善。**
 
 ## 针对于已经入手了yolov8/yolo11项目的同学来说，如果你有以下几点需求，可以考虑追加入手！
 1. 想用最新的YOLO26做实验！而且本项目支持v8、v10、11、12、26全系列版本！
 2. 想深入学习改进创新的同学，本项目会附带二次创新的通用教程，手把手教你设计出属于自己的创新模块！
 3. 做完实验不知道怎么写论文？本项目会定期拆解高分论文案例，教你如何把实验结果写成逻辑清晰、亮点突出的高质量学术论文
 4. 想自己魔改模块的同学！本项目提供超级简单的模块注册方式，只需按照教程操作，就能轻松注册自己的模块，还能和各种CSP变种随意组合！
+5. 想用更多自研的模块让你的论文创新度稳稳在线！
+
+**注意：此项目不是包含之前的YOLO项目，本项目的意思是这里面的创新点都可以用于YOLOV8,YOLOV10,YOLO11,YOLO12,YOLO26**
 
 ## 模块列表(这些模块均已在代码中注册好，只需要修改yaml可以直接实验)
 
-- ultralytics/nn/extra_modules/attention 
+- ultralytics/nn/extra_modules/attention(配置文件在ultralytics/cfg/models/improve/attention)
 
     1. ultralytics/nn/extra_modules/attention/SEAM.py
     2. CVPR2021|ultralytics/nn/extra_modules/attention/ca.py
@@ -35,7 +41,7 @@
     15. TGRS2025|ultralytics/nn/extra_modules/attention/DHPF.py
     16. TGRS2025|ultralytics/nn/extra_modules/attention/ACAB.py
 
-- ultralytics/nn/extra_modules/conv_module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第五节)
+- ultralytics/nn/extra_modules/conv_module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第五节,支持与attention部分联合改进CSP模块中的残差块)
 
     1. CVPR2021|ultralytics/nn/extra_modules/conv_module/dbb.py
     2. TIP2024|ultralytics/nn/extra_modules/conv_module/deconv.py
@@ -67,13 +73,13 @@
     28. ACCV2024|ultralytics/nn/extra_modules/conv_module/RMBC.py
     29. CVPR2026|ultralytics/nn/extra_modules/conv_module/DEGConv.py
 
-- engine/extre_module/custom_nn/stem
+- engine/extre_module/custom_nn/stem(配置文件在ultralytics/cfg/models/improve/stem)
 
     1. ultralytics/nn/extra_modules/stem/SRFD.py
     2. ultralytics/nn/extra_modules/stem/LoG.py
     3. ICCV2023|ultralytics/nn/extra_modules/stem/RepStem.py
 
-- ultralytics/nn/extra_modules/upsample
+- ultralytics/nn/extra_modules/upsample(配置文件在ultralytics/cfg/models/improve/upsample)
 
     1. CVPR2024|ultralytics/nn/extra_modules/upsample/eucb.py
     2. CVPR2024|ultralytics/nn/extra_modules/upsample/eucb_sc.py
@@ -83,7 +89,7 @@
     6. ICCV2025|ultralytics/nn/extra_modules/upsample/Converse2D_Up.py
     7. CVPR2025|ultralytics/nn/extra_modules/upsample/DSUB.py
 
-- ultralytics/nn/extra_modules/downsample
+- ultralytics/nn/extra_modules/downsample(配置文件在ultralytics/cfg/models/improve/downsample)
 
     1. TIP2020|ultralytics/nn/extra_modules/downsample/gcnet.py
     2. 自研模块|ultralytics/nn/extra_modules/downsample/lawds.py 
@@ -98,7 +104,7 @@
     11. 自研模块|ultralytics/nn/extra_modules/downsample/FreqLAWDS.py
     12. 自研模块|ultralytics/nn/extra_modules/downsample/RouterLAWDS.py
 
-- ultralytics/nn/extra_modules/module
+- ultralytics/nn/extra_modules/module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
     1. AAAI2025|ultralytics/nn/extra_modules/module/APBottleneck.py
     2. CVPR2025|ultralytics/nn/extra_modules/module/efficientVIM.py
@@ -148,14 +154,18 @@
     46. TGRS2025|ultralytics/nn/extra_modules/module/MAC.py
     47. AAAI2026|ultralytics/nn/extra_modules/module/SPJFB.py
     48. 自研模块|ultralytics/nn/extra_modules/module/FasterCGABlock.py
+    49. CVPR2026|ultralytics/nn/extra_modules/module/sparse_mamba_block.py
+    50. CVPR2026|ultralytics/nn/extra_modules/module/MSInit.py
+    51. CVPR2026|ultralytics/nn/extra_modules/module/PFG.py
+    52. CVPR2026|ultralytics/nn/extra_modules/module/LFP.py
 
-- ultralytics/nn/extra_modules/block 
+- ultralytics/nn/extra_modules/block (此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
     
     1. ultralytics/nn/extra_modules/block/CSPBlock.py
     2. TPAMI2025|ultralytics/nn/extra_modules/block/MANet.py
     3. TPAMI2024|ultralytics/nn/extra_modules/block/MetaFormer.py
 
-- ultralytics/nn/extra_modules/transformer
+- ultralytics/nn/extra_modules/transformer(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
     1. ICLR2025|ultralytics/nn/extra_modules/transformer/PolaLinearAttention.py
     2. CVPR2023|ultralytics/nn/extra_modules/transformer/biformer.py
@@ -187,7 +197,7 @@
     28. CVPR2026|ultralytics/nn/extra_modules/transformer/BinaryAttention.py
     29. CVPR2025|ultralytics/nn/extra_modules/transformer/wca.py
 
-- ultralytics/nn/extra_modules/mamba
+- ultralytics/nn/extra_modules/mamba(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
     1. AAAI2025|ultralytics/nn/extra_modules/mamba/SS2D.py
     2. CVPR2025|ultralytics/nn/extra_modules/mamba/ASSM.py
@@ -202,8 +212,9 @@
     11. TGRS2025|ultralytics/nn/extra_modules/mamba/GLSS.py
     12. TGRS2025|ultralytics/nn/extra_modules/mamba/GLSS2D.py
     13. CVPR2026|ultralytics/nn/extra_modules/mamba/TransMixer.py
+    14. CVPR2026|ultralytics/nn/extra_modules/mamba/sparse_state_space.py
 
-- ultralytics/nn/extra_modules/mlp
+- ultralytics/nn/extra_modules/mlp(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
     1. CVPR2024|ultralytics/nn/extra_modules/mlp/ConvolutionalGLU.py
     2. IJCAI2024|ultralytics/nn/extra_modules/mlp/DFFN.py
@@ -216,7 +227,7 @@
     9. ICVJ2024|ultralytics/nn/extra_modules/mlp/DML.py
     10. AAAI2026|ultralytics/nn/extra_modules/mlp/DIFF.py
 
-- ultralytics/nn/extra_modules/neck
+- ultralytics/nn/extra_modules/neck(配置文件在ultralytics/cfg/models/improve/neck)
 
     1. ultralytics/nn/extra_modules/neck/ASF.py
     2. ultralytics/nn/extra_modules/neck/BiFPN.py
@@ -231,7 +242,7 @@
     11. ultralytics/nn/extra_modules/neck/EMBSFPN.py
     12. ultralytics/nn/extra_modules/neck/FDPN.py((里面有三个自研模块FocusFeature、DynamicFrequencyFocusFeature、AlignmentGuidedFocusFeature))
 
-- ultralytics/nn/extra_modules/featurefusion
+- ultralytics/nn/extra_modules/featurefusion(配置文件在ultralytics/cfg/models/improve/featurefusion)
 
     1. 自研模块|ultralytics/nn/extra_modules/featurefusion/cgfm.py
     2. BMVC2024|ultralytics/nn/extra_modules/featurefusion/msga.py
@@ -254,20 +265,23 @@
     19. 自研模块|ultralytics/nn/extra_modules/featurefusion/DAF.py
     20. 自研模块|ultralytics/nn/extra_modules/featurefusion/CIDAF.py
     21. 自研模块|ultralytics/nn/extra_modules/featurefusion/WDAF.py
+    22. CVPR2026|ultralytics/nn/extra_modules/featurefusion/SFSFusion.py
+    23. CVPR2026|ultralytics/nn/extra_modules/featurefusion/FAAFusion.py
 
-- ultralytics/nn/extra_modules/norm
+- ultralytics/nn/extra_modules/norm(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
     1. ICML2024|engine/extre_module/custom_nn/transformer/repbn.py
     2. CVPR2025|engine/extre_module/custom_nn/transformer/dyt.py
     3. engine/extre_module/custom_nn/norm/derf.py
 
-- ultralytics/nn/extra_modules/featurepreprocess
+- ultralytics/nn/extra_modules/featurepreprocess(配置文件在ultralytics/cfg/models/improve/featurepreprocess)
 
     1. TGRS2025|ultralytics/nn/extra_modules/featurepreprocess/FAENet.py
 
-- ultralytics/nn/extra_modules/head(ultralytics/cfg/models/improve/head)
+- ultralytics/nn/extra_modules/head(配置文件在ultralytics/cfg/models/improve/head)
 
     1. ultralytics/nn/extra_modules/head/LSPCD.py
+    2. ultralytics/nn/extra_modules/head/LQE.py
 
 ## Loss 列表
 
@@ -363,3 +377,15 @@
     8. 修复用户反馈的bug。
     9. 补齐了LSPCD的配置文件。
     10. 新增CVPR2026-Does YOLO Really Need to See Every Training Image in Every Epoch?的实现方法，此方法主要用于筛选简单和困难的样本，大部分情况下可以无损加速训练，并新增使用教程视频。
+
+- 20260405
+    1. 新增CVPR2026-sparse_state_space模块。
+    2. 新增CVPR2026-sparse_mamba_block模块。
+    3. 新增CVPR2026-MSInit模块。
+    4. 新增CVPR2026-PFG模块。
+    5. 新增CVPR2026-SFSFusion模块。
+    6. 新增CVPR2026-LFP模块。
+    7. 新增CVPR2026-FAAFusion模块。
+    8.  新增LQE检测头。
+    9.  优化LSPCD检测头。
+    10. 新增LSPCD、LQE检测头的讲解视频。

@@ -1,6 +1,6 @@
 # [基于Ultralytics的RT-DETR改进详细介绍](https://github.com/z1069614715/objectdetection_script)
 
-# 目前自带的一些改进方案(目前拥有合计320+个改进点！持续更新！)
+# 目前自带的一些改进方案(目前拥有合计330+个改进点！持续更新！)
 
 # 为了感谢各位对RTDETR项目的支持,本项目的赠品是yolov5-PAGCP通道剪枝算法.[具体使用教程](https://www.bilibili.com/video/BV1yh4y1Z7vz/)
 
@@ -876,6 +876,22 @@
     
     使用[CVPR2026 MixerCSeg](https://arxiv.org/pdf/2603.01361)中的TransMixer与CSP改进Backbone.
 
+110. ultralytics/cfg/models/rt-detr/rtdetr-C2f-MSInit.yaml
+    
+    使用[CVPR2026 PFGNet](https://arxiv.org/pdf/2602.20537)中的MSInit模块与CSP改进RTDETR.
+
+111. ultralytics/cfg/models/rt-detr/rtdetr-C2f-PFG.yaml
+
+    使用[CVPR2026 PFGNet](https://arxiv.org/pdf/2602.20537)中的PFG模块与CSP改进RTDETR.
+
+112. ultralytics/cfg/models/rt-detr/rtdetr-C2f-SMB.yaml
+     
+    使用[CVPR2026 Scan Clusters, Not Pixels](https://arxiv.org/pdf/2602.21917)中的SparseStateSpace模块与CSP改进RTDETR.
+
+113. ultralytics/cfg/models/rt-detr/rtdetr-C2f-SMS.yaml
+    
+    使用[CVPR2026 Scan Clusters, Not Pixels](https://arxiv.org/pdf/2602.21917)中的SparseStateSpace模块与CSP改进RTDETR.
+
 ### AIFI系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-LPE.yaml
 
@@ -1000,6 +1016,14 @@
 32. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-WCA.yaml
     
     使用[CVPR2025 Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection](https://openaccess.thecvf.com/content/CVPR2025/papers/Yan_Wavelet_and_Prototype_Augmented_Query-based_Transformer_for_Pixel-level_Surface_Defect_CVPR_2025_paper.pdf)中的WCA改进AIFI.
+
+33. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-CGTA.yaml
+     
+    使用[TGRS2026 CGA](https://ieeexplore.ieee.org/document/11373098)中的CGTA改进AIFI.
+
+34. ultralytics/cfg/models/rt-detr/rtdetr-AIFI-LCGA.yaml
+    
+    使用[TGRS2026 CGA](https://ieeexplore.ieee.org/document/11373098)中的LCGA改进AIFI.
 
 ### Neck系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-ASF.yaml
@@ -1135,6 +1159,14 @@
 33. ultralytics/cfg/models/rt-detr/rtdetr-CAFM.yaml
     
     使用[TIP2025 DSMT](https://ieeexplore.ieee.org/document/10955125)中的CAFM改进rtdetr-neck.
+
+34. ultralytics/cfg/models/rt-detr/rtdetr-NSFPN.yaml
+     
+    使用[CVPR2026 NS-FPN](https://arxiv.org/pdf/2508.06878)中的LFP和SFSFusion改进RTDETR-neck.
+
+35. ultralytics/cfg/models/rt-detr/rtdetr-FAAFusion.yaml
+    
+    使用[CVPR2026 Fourier Angle Alignment for Oriented Object Detection in Remote Sensing](https://arxiv.org/pdf/2602.23790)中的FAAFusion模块改进RTDETR-neck.
 
 ### Head系列
 1. ultralytics/cfg/models/rt-detr/rtdetr-p2.yaml
@@ -2572,3 +2604,15 @@
     9. 更新使用教程.
     10. 百度云视频增加20260321更新说明.
     11. 修复一些失效的链接.
+
+- **20260410-rtdetr-v1.61**
+    1. 新增TGRS2026-CGTA模块。
+    2. 新增TGRS2026-LCGA模块。
+    3. 新增CVPR2026-sparse_state_space模块。
+    4. 新增CVPR2026-sparse_mamba_block模块。
+    5. 新增CVPR2026-MSInit模块。
+    6. 新增CVPR2026-PFG模块。
+    7. 新增CVPR2026-SFSFusion、LFP模块。
+    8. 新增CVPR2026-FAAFusion模块。
+    9. 更新使用教程。
+    10. 百度云视频增加20260410更新说明.

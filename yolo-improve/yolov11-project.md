@@ -790,6 +790,14 @@
     
     使用[TIP2025 DSMT](https://ieeexplore.ieee.org/document/10955125)中的CAFM改进yolo11-neck.
 
+36. ultralytics/cfg/models/11/yolo11-NSFPN.yaml
+    
+    使用[CVPR2026 NS-FPN](https://arxiv.org/pdf/2508.06878)中的LFP和SFSFusion改进YOLO11-neck.
+
+37. ultralytics/cfg/models/11/yolo11-FAAFusion.yaml
+     
+    使用[CVPR2026 Fourier Angle Alignment for Oriented Object Detection in Remote Sensing](https://arxiv.org/pdf/2602.23790)中的FAAFusion模块改进yolo11-neck.
+
 ### Head系列
 1. ultralytics/cfg/models/11/yolo11-dyhead.yaml
 
@@ -1489,6 +1497,22 @@
     
     使用[CVPR2026 TransMixer](https://arxiv.org/pdf/2603.01361)中的TransMixer改进C3k2.
 
+157. ultralytics/cfg/models/11/yolo11-C3k2-MSInit.yaml
+     
+    使用[CVPR2026 PFGNet](https://arxiv.org/pdf/2602.20537)中的MSInit模块改进C3k2.
+
+158. ultralytics/cfg/models/11/yolo11-C3k2-PFG.yaml
+
+    使用[CVPR2026 PFGNet](https://arxiv.org/pdf/2602.20537)中的PFG模块改进C3k2.
+
+159. ultralytics/cfg/models/11/yolo11-C3k2-SMS.yaml
+     
+    使用[CVPR2026 Scan Clusters, Not Pixels](https://arxiv.org/pdf/2602.21917)中的SparseStateSpace改进C3k2.
+
+160. ultralytics/cfg/models/11/yolo11-C3k2-SMB.yaml
+    
+    使用[CVPR2026 Scan Clusters, Not Pixels](https://arxiv.org/pdf/2602.21917)中的SparseMambaBlock改进C3k2.
+
 ### C2PSA系列
 
 1. ultralytics/cfg/models/11/yolo11-C2BRA.yaml
@@ -1602,6 +1626,14 @@
 28. ultralytics/cfg/models/11/yolo11-C2WCA.yaml
     
     使用[CVPR2025 Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection](https://openaccess.thecvf.com/content/CVPR2025/papers/Yan_Wavelet_and_Prototype_Augmented_Query-based_Transformer_for_Pixel-level_Surface_Defect_CVPR_2025_paper.pdf)中的WCA改进C2PSA.
+
+29. ultralytics/cfg/models/11/yolo11-C2LCGA.yaml
+    
+    使用[TGRS2026 CGA](https://ieeexplore.ieee.org/document/11373098)中的LCGA改进C2PSA.
+
+30. ultralytics/cfg/models/11/yolo11-C2CGTA.yaml
+     
+    使用[TGRS2026 CGA](https://ieeexplore.ieee.org/document/11373098)中的CGTA改进C2PSA.
 
 ### A2C2f系列
 1. ultralytics/cfg/models/12/yolo12-A2C2f-CGLU.yaml
@@ -2016,3 +2048,15 @@
     8. 新增CVPR2025-Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection中的WCA模块.
     9. 更新使用教程.
     10. 百度云视频增加20260321更新说明.
+
+- **20260410-yolo11-v1.40**
+    1. 新增TGRS2026-CGTA模块。
+    2. 新增TGRS2026-LCGA模块。
+    3. 新增CVPR2026-sparse_state_space模块。
+    4. 新增CVPR2026-sparse_mamba_block模块。
+    5. 新增CVPR2026-MSInit模块。
+    6. 新增CVPR2026-PFG模块。
+    7. 新增CVPR2026-SFSFusion、LFP模块。
+    8. 新增CVPR2026-FAAFusion模块。
+    9. 更新使用教程。
+    10. 百度云视频增加20260410更新说明.

@@ -36,10 +36,9 @@
     10. TGRS2025|ultralytics/nn/extra_modules/attention/MCA.py
     11. CVPR2025|ultralytics/nn/extra_modules/attention/CASAB.py 
     12. NN2025|ultralytics/nn/extra_modules/attention/KSFA.py
-    13. TPAMI2025|ultralytics/nn/extra_modules/attention/GQL.py
-    14. TGRS2025|ultralytics/nn/extra_modules/attention/ACA.py
-    15. TGRS2025|ultralytics/nn/extra_modules/attention/DHPF.py
-    16. TGRS2025|ultralytics/nn/extra_modules/attention/ACAB.py
+    13. TGRS2025|ultralytics/nn/extra_modules/attention/ACA.py
+    14. TGRS2025|ultralytics/nn/extra_modules/attention/DHPF.py
+    15. TGRS2025|ultralytics/nn/extra_modules/attention/ACAB.py
 
 - ultralytics/nn/extra_modules/conv_module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第五节,支持与attention部分联合改进CSP模块中的残差块)
 
@@ -66,12 +65,11 @@
     21. CVPR2023|ultralytics/nn/extra_modules/conv_module/SMPConv.py
     22. MIA2025|ultralytics/nn/extra_modules/conv_module/FourierConv.py
     23. CVPR2024|ultralytics/nn/extra_modules/conv_module/SFSConv.py
-    24. ICCV2025|ultralytics/nn/extra_modules/conv_module/MBRConv.py
-    25. ICCV2025|ultralytics/nn/extra_modules/conv_module/ConvAttn.py
-    26. ICCV2025|ultralytics/nn/extra_modules/conv_module/Converse2D.py
-    27. CVPR2025|ultralytics/nn/extra_modules/conv_module/gcconv.py
-    28. ACCV2024|ultralytics/nn/extra_modules/conv_module/RMBC.py
-    29. CVPR2026|ultralytics/nn/extra_modules/conv_module/DEGConv.py
+    24. ICCV2025|ultralytics/nn/extra_modules/conv_module/ConvAttn.py
+    25. ICCV2025|ultralytics/nn/extra_modules/conv_module/Converse2D.py
+    26. CVPR2025|ultralytics/nn/extra_modules/conv_module/gcconv.py
+    27. ACCV2024|ultralytics/nn/extra_modules/conv_module/RMBC.py
+    28. CVPR2026|ultralytics/nn/extra_modules/conv_module/DEGConv.py
 
 - engine/extre_module/custom_nn/stem(配置文件在ultralytics/cfg/models/improve/stem)
 
@@ -103,6 +101,7 @@
     10. 自研模块|ultralytics/nn/extra_modules/downsample/EdgeLAWDS.py
     11. 自研模块|ultralytics/nn/extra_modules/downsample/FreqLAWDS.py
     12. 自研模块|ultralytics/nn/extra_modules/downsample/RouterLAWDS.py
+    13. 自研模块|ultralytics/nn/extra_modules/downsample/FSCGD.py
 
 - ultralytics/nn/extra_modules/module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
@@ -136,28 +135,37 @@
     28. CVPR2024|ultralytics/nn/extra_modules/module/PKIModule.py
     29. CVPR2024|ultralytics/nn/extra_modules/module/camixer.py
     30. ICCV2025|ultralytics/nn/extra_modules/module/ESC.py
-    31. CVPR2025|ultralytics/nn/extra_modules/module/nnWNet.py
-    32. TGRS2025|ultralytics/nn/extra_modules/module/ARF.py
-    33. AAAI2024|ultralytics/nn/extra_modules/module/CFBlock.py
-    34. IJCV2024|ultralytics/nn/extra_modules/module/FMA.py
-    35. ultralytics/nn/extra_modules/module/LWGA.py
-    36. TGRS2025|ultralytics/nn/extra_modules/module/CSSC.py
-    37. TGRS2025|ultralytics/nn/extra_modules/module/CNCM.py
-    38. ICCV2025|ultralytics/nn/extra_modules/module/HFRB.py
-    39. ICIP2025|ultralytics/nn/extra_modules/module/EVA.py
-    40. CVPR2025|ultralytics/nn/extra_modules/module/IEL.py
-    41. MICCAI2023|ultralytics/nn/extra_modules/module/MFEBlock.py
-    42. AAAI2026|ultralytics/nn/extra_modules/module/PartialNetBlock.py
-    43. TGRS2025|ultralytics/nn/extra_modules/module/DRG.py
-    44. ultralytics/nn/extra_modules/module/Wave2D.py
-    45. TGRS2025|ultralytics/nn/extra_modules/module/GLGM.py
-    46. TGRS2025|ultralytics/nn/extra_modules/module/MAC.py
-    47. AAAI2026|ultralytics/nn/extra_modules/module/SPJFB.py
-    48. 自研模块|ultralytics/nn/extra_modules/module/FasterCGABlock.py
-    49. CVPR2026|ultralytics/nn/extra_modules/module/sparse_mamba_block.py
-    50. CVPR2026|ultralytics/nn/extra_modules/module/MSInit.py
-    51. CVPR2026|ultralytics/nn/extra_modules/module/PFG.py
-    52. CVPR2026|ultralytics/nn/extra_modules/module/LFP.py
+    31. TGRS2025|ultralytics/nn/extra_modules/module/ARF.py
+    32. AAAI2024|ultralytics/nn/extra_modules/module/CFBlock.py
+    33. IJCV2024|ultralytics/nn/extra_modules/module/FMA.py
+    34. ultralytics/nn/extra_modules/module/LWGA.py
+    35. TGRS2025|ultralytics/nn/extra_modules/module/CSSC.py
+    36. TGRS2025|ultralytics/nn/extra_modules/module/CNCM.py
+    37. ICCV2025|ultralytics/nn/extra_modules/module/HFRB.py
+    38. ICIP2025|ultralytics/nn/extra_modules/module/EVA.py
+    39. CVPR2025|ultralytics/nn/extra_modules/module/IEL.py
+    40. MICCAI2023|ultralytics/nn/extra_modules/module/MFEBlock.py
+    41. AAAI2026|ultralytics/nn/extra_modules/module/PartialNetBlock.py
+    42. TGRS2025|ultralytics/nn/extra_modules/module/DRG.py
+    43. ultralytics/nn/extra_modules/module/Wave2D.py
+    44. TGRS2025|ultralytics/nn/extra_modules/module/GLGM.py
+    45. TGRS2025|ultralytics/nn/extra_modules/module/MAC.py
+    46. AAAI2026|ultralytics/nn/extra_modules/module/SPJFB.py
+    47. 自研模块|ultralytics/nn/extra_modules/module/FasterCGABlock.py
+    48. CVPR2026|ultralytics/nn/extra_modules/module/sparse_mamba_block.py
+    49. CVPR2026|ultralytics/nn/extra_modules/module/MSInit.py
+    50. CVPR2026|ultralytics/nn/extra_modules/module/PFG.py
+    51. CVPR2026|ultralytics/nn/extra_modules/module/LFP.py
+    52. 自研模块|ultralytics/nn/extra_modules/module/AMSI.py
+    53. 自研模块|ultralytics/nn/extra_modules/module/CMSI.py
+    54. 自研模块|ultralytics/nn/extra_modules/module/FMSI.py
+    55. 自研模块|ultralytics/nn/extra_modules/module/HPFGA.py
+    56. 自研模块|ultralytics/nn/extra_modules/module/DPFGA.py
+    57. 自研模块|ultralytics/nn/extra_modules/module/HOIE.py
+    58. 自研模块|ultralytics/nn/extra_modules/module/ADIE.py
+    59. TGRS2025|ultralytics/nn/extra_modules/module/DSEBlock.py
+    60. TGRS2025|ultralytics/nn/extra_modules/module/LaSEA.py
+    61. CVPR2026|ultralytics/nn/extra_modules/module/SFEB.py
 
 - ultralytics/nn/extra_modules/block (此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
     
@@ -196,6 +204,9 @@
     27. TIP2025|ultralytics/nn/extra_modules/transformer/DWM_MSA.py
     28. CVPR2026|ultralytics/nn/extra_modules/transformer/BinaryAttention.py
     29. CVPR2025|ultralytics/nn/extra_modules/transformer/wca.py
+    30. TGRS2026|ultralytics/nn/extra_modules/transformer/CGTA.py
+    31. TGRS2026|ultralytics/nn/extra_modules/transformer/LCGA.py
+    32. AAAI2026|ultralytics/nn/extra_modules/transformer/CirculantAttention.py
 
 - ultralytics/nn/extra_modules/mamba(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
@@ -267,6 +278,7 @@
     21. 自研模块|ultralytics/nn/extra_modules/featurefusion/WDAF.py
     22. CVPR2026|ultralytics/nn/extra_modules/featurefusion/SFSFusion.py
     23. CVPR2026|ultralytics/nn/extra_modules/featurefusion/FAAFusion.py
+    24. PR2026|ultralytics/nn/extra_modules/featurefusion/HAFFormer.py
 
 - ultralytics/nn/extra_modules/norm(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
@@ -389,3 +401,22 @@
     8.  新增LQE检测头。
     9.  优化LSPCD检测头。
     10. 新增LSPCD、LQE检测头的讲解视频。
+
+- 20260417
+    1. 新增TGRS2026-CGTA模块。
+    2. 新增TGRS2026-LCGA模块。
+    3. 新增自研模块-FSCGD模块。
+    4. 新增自研模块-ADIE模块。
+    5. 新增自研模块-AMSI模块。
+    6. 新增自研模块-CMSI模块。
+    7. 新增自研模块-CSIE模块。
+    8. 新增自研模块-DPFGA模块。
+    9. 新增自研模块-FMSI模块。
+    10. 新增自研模块-HOIE模块。
+    11. 新增自研模块-HPFGA模块。
+    12. 新增PR2026-HAFFormer模块。
+    13. 新增AAAI2026-CirculantAttention模块。
+    14. 新增TGRS2025-DSEBlock模块。
+    15. 新增TGRS2025-LaSEA模块。
+    16. 新增CVPR2026-SFEB模块。
+    17. 新增论文系列讲解视频-<用YOLO可以，但你的论文名字不能出现YOLO！>

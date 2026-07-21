@@ -72,6 +72,7 @@
     29. TGRS2026|ultralytics/nn/extra_modules/conv_module/CKConv.py
     30. 自研模块|ultralytics/nn/extra_modules/conv_module/AGIDWC.py
     31. 自研模块|ultralytics/nn/extra_modules/conv_module/MSIDWC.py
+    32. ICML2026|ultralytics/nn/extra_modules/conv_module/PolyConv.py
 
 - engine/extre_module/custom_nn/stem(配置文件在ultralytics/cfg/models/improve/stem)
 
@@ -226,6 +227,7 @@
     33. CVPR2026|ultralytics/nn/extra_modules/transformer/WDAM.py
     34. TGRS2026|ultralytics/nn/extra_modules/transformer/GLCDM.py
     35. ICIP2026|ultralytics/nn/extra_modules/transformer/SDTA.py
+    36. CVPR2026F|ultralytics/nn/extra_modules/transformer/SAA.py
 
 - ultralytics/nn/extra_modules/mamba(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
@@ -263,6 +265,7 @@
     13. CVPR2026|ultralytics/nn/extra_modules/mlp/AFFN.py
     14. 自研模块|ultralytics/nn/extra_modules/mlp/MSAFFN.py
     15. 自研模块|ultralytics/nn/extra_modules/mlp/GLSFFN.py
+    16. ICML2026|ultralytics/nn/extra_modules/mlp/PolyMLP.py
 
 - ultralytics/nn/extra_modules/neck(配置文件在ultralytics/cfg/models/improve/neck)
 
@@ -505,3 +508,11 @@
     16. 新增深度学习常见数据集问题QA视频讲解。
     17. 新增深度学习常见消融实验问题QA视频讲解。
     18. 修复一些已知问题。
+
+- 20260721
+    
+    1. 增加可选 swanlab 的显示，详细请看B站 swanlab 的教程。
+    2. 新增ICML2026-PolyMLP模块。
+    3. 新增ICML2026-PolyConv模块。
+    4. 新增CVPR2026F-SAA模块。
+    5. 新增ECCV2026-FSDCDETR论文精讲。

@@ -388,6 +388,17 @@ PS:
     21. 新增深度学习常见消融实验问题QA视频讲解。
     22. 修复一些已知BUG。
 
+- 20260721
+    
+    1. 修复 tools/inference/mutilmodality/torch_inf.py 脚本，使其支持实例分割、旋转目标检测的推理任务，详细使用说明请看 docs/mutilmodality_torch_inf_使用说明.md。
+    2. 修复 export.py 使其支持 实例分割、旋转目标检测 和 其多模态任务，并同步调试 train.py 中 test-only 状态下的验证任务。
+    3. 优化训练过程中的输出信息，支持输出GPU利用率和显存使用状态。
+    4. 增加可选 swanlab 的显示，详细请看B站 swanlab 的教程。
+    5. 新增ICML2026-PolyMLP模块。
+    6. 新增ICML2026-PolyConv模块。
+    7. 新增CVPR2026F-SAA模块。
+    8. 新增ECCV2026-FSDCDETR论文精讲。
+
 ### 7. 目前已有的模块
 
 - engine/extre_module/custom_nn/attention 
@@ -451,6 +462,7 @@ PS:
     30. TGRS2026|engine/extre_module/custom_nn/conv_module/CKConv.py
     31. 自研模块｜engine/extre_module/custom_nn/conv_module/AGIDWC.py
     32. 自研模块｜engine/extre_module/custom_nn/conv_module/MSIDWC.py
+    33. ICML2026|engine/extre_module/custom_nn/conv_module/PolyConv.py
 
 - engine/extre_module/custom_nn/upsample
 
@@ -642,6 +654,7 @@ PS:
     32. CVPR2026|engine/extre_module/custom_nn/transformer/WDAM.py
     33. TGRS2026｜engine/extre_module/custom_nn/transformer/GLCDM.py
     34. ICIP2026|engine/extre_module/custom_nn/transformer/SDTA.py
+    35. CVPR2026F|engine/extre_module/custom_nn/transformer/SAA.py
 
 - engine/extre_module/custom_nn/mlp
 
@@ -660,6 +673,7 @@ PS:
     13. CVPR2026｜engine/extre_module/custom_nn/mlp/AFFN.py
     14. 自研模块｜engine/extre_module/custom_nn/mlp/MSAFFN.py
     15. 自研模块｜engine/extre_module/custom_nn/mlp/GLSFFN.py
+    16. ICML2026|engine/extre_module/custom_nn/mlp/PolyMLP.py
 
 - engine/extre_module/custom_nn/mamba
 
@@ -837,3 +851,4 @@ PS:
 4. 深度学习常见基础模型、改进模型实验问题QA
 5. 深度学习常见数据集问题QA
 6. 深度学习常见消融实验问题QA
+7. 论文精读｜ECCV2026-FSDCDETR

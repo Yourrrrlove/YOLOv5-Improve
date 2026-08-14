@@ -399,6 +399,15 @@ PS:
     7. 新增CVPR2026F-SAA模块。
     8. 新增ECCV2026-FSDCDETR论文精讲。
 
+- 202608
+  
+    1. 新增自研模块-FEUCB模块。
+    2. 新增自研模块-DOGEUCB模块。
+    3. 新增WACV2025-RTDETRv3，配置文件在 configs/rtdetrv3。
+    4. 新增ICCV2025-ATR-UMOD多模态旋转目标检测数据集，具体在configs/mutilmodality/BaiDuYunPan.txt自取。
+    5. 参考WACV2025-RTDETRV3中的训练策略并在DFine/DEIM中实现，支持所有任务(目标检测，实例分割，旋转目标检测，图图多模态，图文多模态，图图文多模态...)，详细说明可以看 docs/RTDETRV3-训练策略流程.md，介绍可以看B站 WACV2025-RTDETRV3的解读。
+    6. 新增 RTDETRV3-训练策略教程 讲解视频。
+
 ### 7. 目前已有的模块
 
 - engine/extre_module/custom_nn/attention 
@@ -473,6 +482,8 @@ PS:
     5. ICCV2023|engine/extre_module/custom_nn/upsample/DySample.py
     6. ICCV2025|engine/extre_module/custom_nn/upsample/Converse2D_Up.py
     7. CVPR2025|engine/extre_module/custom_nn/upsample/DSUB.py
+    8. 自研模块|ultralytics/nn/extra_modules/upsample/FEUCB.py
+    9. 自研模块|ultralytics/nn/extra_modules/upsample/DOGEUCB.py
 
 - engine/extre_module/custom_nn/downsample
 

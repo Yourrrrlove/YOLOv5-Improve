@@ -92,6 +92,8 @@
     5. ICCV2023|ultralytics/nn/extra_modules/upsample/DySample.py
     6. ICCV2025|ultralytics/nn/extra_modules/upsample/Converse2D_Up.py
     7. CVPR2025|ultralytics/nn/extra_modules/upsample/DSUB.py
+    8. 自研模块|ultralytics/nn/extra_modules/upsample/FEUCB.py
+    9. 自研模块|ultralytics/nn/extra_modules/upsample/DOGEUCB.py
 
 - ultralytics/nn/extra_modules/downsample(配置文件在ultralytics/cfg/models/improve/downsample)
 
@@ -516,3 +518,11 @@
     3. 新增ICML2026-PolyConv模块。
     4. 新增CVPR2026F-SAA模块。
     5. 新增ECCV2026-FSDCDETR论文精讲。
+
+- 20260814
+    
+    1. 新增自研模块-FEUCB模块。
+    2. 新增自研模块-DOGEUCB模块。
+    3. 优化train_auto.py脚本，新增swanlab功能，详细请看 docs/train-auto-baseline-monitor-使用说明.md。
+    4. 新增DyHead检测头讲解视频。
+    5. 新增 通用二次创新课程-SOEP(Small Object Enhance Pyramid)。

@@ -113,6 +113,8 @@
     12. 自研模块|ultralytics/nn/extra_modules/downsample/RouterLAWDS.py
     13. 自研模块|ultralytics/nn/extra_modules/downsample/FSCGD.py
     14. TGRS2026|ultralytics/nn/extra_modules/downsample/DMSSP.py
+    15. TGRS2026|ultralytics/nn/extra_modules/downsample/MSAD.py
+    16. CVPR2026|ultralytics/nn/extra_modules/downsample/WaveletDownsample.py
 
 - ultralytics/nn/extra_modules/module(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
@@ -234,6 +236,9 @@
     35. ICIP2026|ultralytics/nn/extra_modules/transformer/SDTA.py
     36. CVPR2026F|ultralytics/nn/extra_modules/transformer/SAA.py
     37. TGRS2026|ultralytics/nn/extra_modules/transformer/MSAM.py
+    38. TCSVT2026|ultralytics/nn/extra_modules/transformer/ACE.py
+    39. CVPR2026|ultralytics/nn/extra_modules/transformer/SpatialEnhancedAttention.py
+    40. CVPR2026|ultralytics/nn/extra_modules/transformer/WACGA.py
 
 - ultralytics/nn/extra_modules/mamba(此部分内容教程可以看GuideVideo-MG.md中的改进模块-使用教程的第一和四节)
 
@@ -534,6 +539,7 @@
     5. 新增 通用二次创新课程-SOEP(Small Object Enhance Pyramid)。
 
 - 20260901
+
     1. 新增视频 论文可优化方向分析系列一。
     2. 新增自研模块-FAKConv模块。
     3. 新增TGRS2026-EDDConv模块。
@@ -541,3 +547,12 @@
     5. 新增TGRS2026-WFAM模块。
     6. 新增ICML2026-AMCM模块。
     7. 新增TGRS2026-MSAM模块。
+
+- 20260928
+  
+    1. 新增TGRS2026-MSAD模块。
+    2. 新增TCSVT2026-ACE模块。
+    3. 新增CVPR2026-WaveletDownsample模块。
+    4. 新增CVPR2026-SpatialEnhancedAttention模块。
+    5. 新增CVPR2026-WACGA模块。
+    6. 新增论文视频-实验设计的7个亮点。
